@@ -1,4 +1,10 @@
 <x-layoutAdmin>
+     <div class="container-fluid px-4">
+      <h1 class="mt-4">Product</h1>
+        <ol class="breadcrumb mb-4">
+            <li class="breadcrumb-item active">Product</li>
+        </ol>
+     </div>
     <div class="p-5">
         <div class="card">
             <div class="card-body">
@@ -14,7 +20,7 @@
                     <tbody>
                         <tr>
                             <th scope="row">1</th>
-                            <td>Mark</td>
+                            <td>Bintang</td>
                             <td>Otto</td>
                             <td>@mdo</td>
                         </tr>
