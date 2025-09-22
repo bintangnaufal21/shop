@@ -1,6 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\UserController;
 
 Route::get('/', function () {
     return view('welcome');
@@ -14,9 +15,12 @@ Route::get('/product', function () {
     return view('product');
 })->name('product');
 
-Route::get('/user', function () {
-    return view('user');
-})->name('user');
+//! Route::get('/user', function () {
+//?     return view('user');
+//* })->name('user');
+
+Route::get('/user',[UserController::class,'index'])->name('user');
+Route::post('/user/create', [UserController::class, 'store'])->name('user.store');
 
 Route::get('/pesanan', function () {
     return view('pesanan');

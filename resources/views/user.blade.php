@@ -5,4 +5,8 @@
             <li class="breadcrumb-item active">User</li>
         </ol>
      </div>
+
+     @foreach ( $dataUser as $data )
+     <p>{{ $data->name }}</p>
+     @endforeach
 </x-layoutAdmin>
