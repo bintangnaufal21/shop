@@ -2,6 +2,7 @@
 
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\UserController;
+use App\Http\Controllers\productController;
 
 Route::get('/', function () {
     return view('welcome');
@@ -21,6 +22,9 @@ Route::get('/product', function () {
 
 Route::get('/user',[UserController::class,'index'])->name('user');
 Route::post('/user/create', [UserController::class, 'store'])->name('user.store');
+
+//ROUTE Product
+Route::get('/data-product', [productController::class, 'index'])->name('dataProduct');
 
 Route::get('/pesanan', function () {
     return view('pesanan');

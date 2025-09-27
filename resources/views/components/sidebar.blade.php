@@ -10,7 +10,7 @@
                                 <div class="sb-nav-link-icon"><i class="fas fa-user"></i></div>
                                 User
                             </a>
-                            <a class="nav-link {{ request()->routeIs('product') ? 'active' : '' }}" href="{{ route('product') }}">
+                            <a class="nav-link {{ request()->routeIs('dataProduct') ? 'active' : '' }}" href="/data-product">
                                 <div class="sb-nav-link-icon"><i class="fas fa-truck-loading"></i></div>
                                 Produk
                             </a>
